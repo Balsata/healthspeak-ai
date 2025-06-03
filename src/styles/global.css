@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* ===== Custom Global Styles (opcional) ===== */
+body {
+  @apply bg-gray-950 text-white font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-white;
+}
+
+a {
+  @apply text-blue-400 hover:underline;
+}
+
+button {
+  @apply transition duration-200 ease-in-out;
+}
