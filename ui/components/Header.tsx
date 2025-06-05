@@ -17,22 +17,22 @@ const Header = () => {
 
                 {/* Nav links */}
                 <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
-                    <a href="#home" className="relative group">
+                    <Link to="/#home" className="relative group">
                         <span className="group-hover:text-indigo-600 transition">Home</span>
                         <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="#key-features" className="relative group">
+                    </Link>
+                    <Link to="/#key-features" className="relative group">
                         <span className="group-hover:text-indigo-600 transition">Key Features</span>
                         <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="#how-it-works" className="relative group">
+                    </Link>
+                    <Link to="/#how-it-works" className="relative group">
                         <span className="group-hover:text-indigo-600 transition">How It Works</span>
                         <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="#contact" className="relative group">
+                    </Link>
+                    <Link to="/#contact" className="relative group">
                         <span className="group-hover:text-indigo-600 transition">Contact</span>
                         <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
+                    </Link>
                 </nav>
 
 

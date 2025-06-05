@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Hero = () => {
     return (
         <section id="home" className="bg-[#eff2ff] py-16 px-6 md:px-20 flex flex-col-reverse md:flex-row items-center justify-center gap-16">
@@ -9,15 +11,17 @@ const Hero = () => {
                 <p className="text-lg text-gray-600 mb-8">
                     Real-time voice-to-voice medical translation powered by AI.
                 </p>
-                <button className="group relative bg-indigo-600 cursor-pointer text-white px-6 py-3 rounded-full shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:shadow-indigo-500/60 hover:shadow-2xl hover:bg-indigo-700 flex items-center gap-3">
-                    <span className="relative z-10 font-semibold">Start Translating</span>
-                    <span className="relative z-10 text-lg transition-transform duration-300 ease-out group-hover:translate-x-2 group-hover:scale-125">
-                        →
-                    </span>
+                <Link to="/translate">
+                    <button className="group relative bg-indigo-600 cursor-pointer text-white px-6 py-3 rounded-full shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:shadow-indigo-500/60 hover:shadow-2xl hover:bg-indigo-700 flex items-center gap-3">
+                        <span className="relative z-10 font-semibold">Start Translating</span>
+                        <span className="relative z-10 text-lg transition-transform duration-300 ease-out group-hover:translate-x-2 group-hover:scale-125">
+                            →
+                        </span>
 
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-indigo-400 opacity-0 group-hover:opacity-40 blur-xl transition-opacity duration-500 z-0 rounded-full"></div>
-                </button>
+                        {/* Glow Effect */}
+                        <div className="absolute inset-0 bg-indigo-400 opacity-0 group-hover:opacity-40 blur-xl transition-opacity duration-500 z-0 rounded-full"></div>
+                    </button>
+                </Link>
             </div>
 
             {/* Imagen */}
@@ -28,5 +32,4 @@ const Hero = () => {
 
     )
 }
-
 export default Hero
