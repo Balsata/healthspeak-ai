@@ -21,7 +21,7 @@ const HowItWorks = () => {
     ];
 
     return (
-        <section className="bg-[#f9fafb] py-20 px-6 md:px-20 text-center">
+        <section id="how-it-works" className="bg-[#f9fafb] py-20 px-6 md:px-20 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-12">How It Works</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-12">
                 {steps.map((step, index) => (
@@ -40,7 +40,7 @@ const HowItWorks = () => {
                         {/* Descripción */}
                         <p className="mt-2 text-sm text-gray-700">{step.description}</p>
 
-                        {/* Flecha excepto el último */}
+                        {/* Flecha  */}
                         {index < steps.length - 1 && (
                             <span className="hidden md:block absolute top-8 right-[-60px] text-gray-300 text-xl">
                                 <i className="fas fa-arrow-right"></i>

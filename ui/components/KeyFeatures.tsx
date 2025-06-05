@@ -32,7 +32,7 @@ const features = [
 
 const KeyFeatures = () => {
     return (
-        <section className="bg-white py-20 px-6 md:px-20 text-center">
+        <section id="key-features" className="bg-white py-20 px-6 md:px-20 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-12">Key Features</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center items-start">

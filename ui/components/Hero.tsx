@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="bg-[#eff2ff] py-16 px-6 md:px-20 flex flex-col-reverse md:flex-row items-center justify-center gap-16">
+        <section id="home" className="bg-[#eff2ff] py-16 px-6 md:px-20 flex flex-col-reverse md:flex-row items-center justify-center gap-16">
             {/* Texto */}
             <div className="flex-1 max-w-xl flex flex-col items-center md:items-start text-center md:text-left">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
