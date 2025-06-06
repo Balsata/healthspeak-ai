@@ -10,3 +10,19 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scaleY(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scaleY(1.8);
+    opacity: 1;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 0.9s ease-in-out infinite;
+}
