@@ -45,6 +45,7 @@ export function useMedicalTranslator(
 
     return {
         messages,
+        setMessages,
         fromLang,
         toLang,
         setFromLang,

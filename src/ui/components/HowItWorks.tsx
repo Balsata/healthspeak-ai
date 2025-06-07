@@ -1,28 +1,26 @@
+import { useTranslation } from "react-i18next";
+
 const HowItWorks = () => {
+    const { t } = useTranslation();
+
     const steps = [
         {
             id: 1,
-            title: "Speak",
-            description: "Speak naturally in your language. The app detects and captures your voice.",
             icon: "fas fa-comment-dots",
         },
         {
             id: 2,
-            title: "Translate",
-            description: "AI instantly translates your speech with medical accuracy.",
             icon: "fas fa-language",
         },
         {
             id: 3,
-            title: "Listen",
-            description: "Natural voice output in the target language facilitates seamless communication.",
             icon: "fas fa-headphones-alt",
         },
     ];
 
     return (
         <section id="how-it-works" className="bg-[#f9fafb] py-20 px-6 md:px-20 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">How It Works</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12">{t("how.sectionTitle")}</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-12">
                 {steps.map((step, index) => (
                     <div key={step.id} className="relative flex flex-col items-center text-center max-w-xs">
@@ -35,10 +33,14 @@ const HowItWorks = () => {
                         </div>
 
                         {/* Título */}
-                        <h3 className="mt-4 text-lg font-semibold text-gray-900">{step.title}</h3>
+                        <h3 className="mt-4 text-lg font-semibold text-gray-900">
+                            {t(`how.steps.${index}.title`)}
+                        </h3>
 
                         {/* Descripción */}
-                        <p className="mt-2 text-sm text-gray-700">{step.description}</p>
+                        <p className="mt-2 text-sm text-gray-700">
+                            {t(`how.steps.${index}.description`)}
+                        </p>
 
                         {/* Flecha  */}
                         {index < steps.length - 1 && (
