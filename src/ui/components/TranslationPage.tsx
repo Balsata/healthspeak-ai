@@ -55,6 +55,7 @@ const TranslationPage = () => {
             await recognizeAndTranslate(role);
             setStatusMessage(t("translationPage.received"));
         } catch (err: any) {
+            console.error("Error al grabar:", err);
             setErrorMessage(err.message || t("translationPage.error"));
             setStatusMessage(t("translationPage.error"));
         } finally {
